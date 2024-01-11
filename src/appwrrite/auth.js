@@ -13,7 +13,7 @@ export class AuthService {
             .setEndpoint(conf.appwriteURL)                      // Your API Endpoint
             .setProject(conf.appwriteProductId);               // Your project ID
 
-        account = new Account(this.client);
+        this.account = new Account(this.client);
     }
 
     //Now making different methods for different purpose and underlying we will be using appwrite but later if we want to change appwrite then these methods remains same just their underlying defination changes
